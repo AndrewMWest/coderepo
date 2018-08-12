@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  div, section, footer, header{
+    border:thin solid red;
+}
+
+<link rel="stylesheet" href="has100pxfont.css" />
+<link rel="stylesheet" href="has200pxfontBUT_IS_PINK.css" />
+<link rel="stylesheet" href="has300pxfont.css" />
+
+/* All fonts will end up with 300px BUT will still have the pink font color */
