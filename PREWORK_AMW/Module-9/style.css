@@ -1,0 +1,11 @@
+.styledFont{
+    font-family: "Times Roman", cursive, sans-serif;
+    color: red;
+    text-align: right;
+}
+
+#styledImage {
+    border-style: dashed;
+    border-width: thick;
+    color: red;
+}

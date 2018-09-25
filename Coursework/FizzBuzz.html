@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+//Generate a random integer between 1 and 100
+// var randomNumber = Math.floor((Math.random()*100) + 1);
+// console.log(randomNumber);
+
+//Append numbers into an array
+
+//Here's a solution that shuffles a list of unique numbers (no repeats, ever).
+
+// for (var a=[],i=0;i<40;++i) a[i]=i;
+
+// function shuffle(array) {
+//   var tmp, current, top = array.length;
+//   if(top) while(--top) {
+//     current = Math.floor(Math.random() * (top + 1));
+//     tmp = array[current];
+//     array[current] = array[top];
+//     array[top] = tmp;
+//   }
+//   return array;
+// }
+
+// a = shuffle(a);
+// console.log(a);
+
+//code from Stack Overflow to find prime numbers...
+var arr = [2];
+
+function isPrime( n ) {
+
+    
+   // eliminate non-integers 
+   if (  n != Math.round(n)  ) {
+      return false;
+   }
+   
+   // assume n is prime and test if true
+   for(var i=2, max=Math.sqrt(n); i <= max; i++) {
+       if ( n % i === 0 ) {
+           return false;
+       }
+    }
+    return n > 1;
+}
+
+function myFunction() {
+
+    for (i = 3; i <= 30; i++) {
+      if ( isPrime(i) ) {
+          arr.push(i); 
+      }// end-if
+    }// end-for
+    document.getElementById("demo").innerHTML = arr;
+}
+
+myFunction();
+<div id="demo"></div>
+console.log(myFunction);
+</script>
+</body>
+</html>
